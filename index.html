@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body style="background-image: url('img/background-image.avif');">
+<body class="body-login">
   
     <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
         <a class="navbar-brand" href="#">Obten Empleo</a>
@@ -65,10 +65,10 @@
                 <div class="form-group form-check">
                   <a href="#">¿Has olvidado tu contraseña?</a>
                 </div>
-                <button type="submit" class="btn btn-primary btn-block" style="border-radius: 30px;">Iniciar Sesión</button>
+                <button id="login" type="submit" class="btn btn-primary btn-block" style="border-radius: 30px;">Iniciar Sesión</button>
                 <hr style="border-top: 1px solid black;"/>
                 <center><p>¿Aún no eres parte de esta comunidad?</p></center>
-                <button type="submit" class="btn btn-success btn-block" style="border-radius: 30px;">Registrarse</button>
+                <button id="register" type="submit" class="btn btn-success btn-block" style="border-radius: 30px;">Registrarse</button>
 
               </form>
             </div>
@@ -79,64 +79,14 @@
       </div>
 
       
-      <div class="container-fluid">
-        <div class="row">
-            <div class="col-3 bg-dark" style="padding: 20px 0px 20px 30px;">
-                <img src="img/default-enterprise.png" class="circle-image-footer" ></img>
-            </div>
-            <div class="col-2 bg-dark" style="padding: 20px 0px 20px 0px;">
-                <h6 style="color:white;">General</h6>
-                <a href="#" class="footer-text-links">Regístrate</a><br/>
-                <a href="#" class="footer-text-links">Centro de ayuda</a><br/>
-                <a href="#" class="footer-text-links">Acerca de</a><br/>
-                <a href="#" class="footer-text-links">Empleos</a><br/>
-                <a href="#" class="footer-text-links">Desarrolladores</a><br/>
-            </div>
-            <div class="col-2 bg-dark" style="padding: 20px 0px 20px 0px;">
-              <h6 style="color:white;">Links de interés</h6>
-                <a href="#" class="footer-text-links">1</a><br/>
-                <a href="#" class="footer-text-links">2</a><br/>
-                <a href="#" class="footer-text-links">3</a><br/>
-                <a href="#" class="footer-text-links">4</a><br/>
-                <a href="#" class="footer-text-links">5</a><br/>
-                <a href="#" class="footer-text-links">6</a><br/>
-                <a href="#" class="footer-text-links">7</a><br/>
-            </div>
-            <div class="col-2 bg-dark" style="padding: 20px 0px 20px 0px;">
-              <h6 style="color:white;">Redes Sociales</h6>
-                <a href="#" class="footer-text-links">1</a><br/>
-                <a href="#" class="footer-text-links">2</a><br/>
-                <a href="#" class="footer-text-links">3</a><br/>
-                <a href="#" class="footer-text-links">4</a><br/>
-                <a href="#" class="footer-text-links">5</a><br/>
-            </div>
-            <div class="col-3 bg-dark" style="padding: 20px 0px 20px 0px;">
-              
-            </div>
-        </div>
-      </div> 
+      <div id="footer" class="container-fluid"></div> 
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/format.js"></script>
 
-    <script>
-      function password_show_hide() {
-  var x = document.getElementById("password");
-  var show_eye = document.getElementById("show_eye");
-  var hide_eye = document.getElementById("hide_eye");
-  hide_eye.classList.remove("d-none");
-  if (x.type === "password") {
-    x.type = "text";
-    show_eye.style.display = "none";
-    hide_eye.style.display = "block";
-  } else {
-    x.type = "password";
-    show_eye.style.display = "block";
-    hide_eye.style.display = "none";
-  }
-}
-    </script>
    
 </body>
 </html>
