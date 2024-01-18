@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obten empleo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body style="background-color: #ABB2B9;">
+  
+  <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Obten Empleo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="home.html">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Mis postulaciones</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="cursos.html">Cursos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" alt="Notificaciones"><i class="fa fa-bell" aria-hidden="true"></i> (2)</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Búsqueda" aria-label="Búsqueda">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+      </form>
+      <form class="form-inline my-2 my-lg-0" style="margin-left: 10px;">
+        <button  id="logout" class="btn btn-outline-danger my-2 my-sm-0" type="submit">Cerrar Sesión</button>
+      </form>
+    </div>
+  </nav>
+      <div class="container-fluid" style="margin-top: 10px;">
+        <div class="row">
+            <div class="col-12">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="home.html">Inicio</a></li>
+                  <li class="breadcrumb-item"><a href="#">Ofertas Laborales</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Oferta</li>
+                </ol>
+              </nav>
+            </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-9">
+                <div class="card" style="margin-top: 15px;">
+                    <div class="card-body">
+                        
+                      <table class="table">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Estado Laboral</th>
+                            <th scope="col">Ofertas <br/>enviadas/aceptadas</th>
+                            <th scope="col">Acción</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Juan Azócar Malverde</td>
+                            <td><kbd>Buscando</kbd></td>
+                            <td>10/3</td>
+                            <td>                        
+                              <button type="button" class="btn btn-primary" style="border-radius: 10px; margin-left: 15px; ">Modificar</button>
+                              <button type="button" class="btn btn-danger" style="border-radius: 10px; margin-left: 15px; ">Dar de Baja</button>
+                          </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>María Rodríguez Castro</td>
+                            <td><kbd>Trabajando</kbd></td>
+                            <td>10/3</td>
+                            <td>
+                              <button type="button" class="btn btn-primary" style="border-radius: 10px; margin-left: 15px; ">Modificar</button>
+                              <button type="button" class="btn btn-danger" style="border-radius: 10px; margin-left: 15px; ">Dar de Baja</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Isidora Azócar Rodríguez</td>
+                            <td><kbd>Trabajando</kbd></td>
+                            <td>10/3</td>
+                            <td>
+                              <button type="button" class="btn btn-primary" style="border-radius: 10px; margin-left: 15px; ">Modificar</button>
+                              <button type="button" class="btn btn-danger" style="border-radius: 10px; margin-left: 15px; ">Dar de Baja</button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                    </div>
+                  </div>
+            </div>
+            
+            <div class="col-3">
+                <div class="card" style="margin-top: 15px;">
+                    <div class="card-body">
+                        <h6 class="card-title" style="margin-top: 10px;">Añadir a tus redes</h6>
+                        <hr/>
+                    </div>
+                  </div>
+
+                  <div class="card" style="margin-top: 15px;">
+                    <div class="card-body" style="text-align: left;">
+                        <kbd><a href="#" style="color:white; font-size: smaller;">Acerca de</a></kbd> <kbd><a href="#" style="color:white; font-size: smaller;">Accesibilidad</a></kbd>
+                        <kbd><a href="#" style="color:white; font-size: smaller;">Centro de ayuda</a></kbd> <kbd><a href="#" style="color:white; font-size: smaller;">Privacidad y condiciones</a></kbd>
+                        <kbd><a href="#" style="color:white; font-size: smaller;">Servicios</a></kbd> 
+                    </div>
+                  </div>
+            </div>
+          </div>
+      </div>
+      <br/>
+     
+    <div id="footer" class="container-fluid"></div> 
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/format.js"></script>
+    
+</body>
+</html>

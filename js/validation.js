@@ -4,7 +4,27 @@ $('#login').click(function(){
 
     console.log("Autenticado");
 
-    window.location.href = 'home.html';
+    $('#sucess-modal').modal('show');
+
+    var tipo_acceso = $('#input-access').val();
+
+    if(tipo_acceso == 'U'){
+        setTimeout(
+            function() 
+            {
+                window.location.href = 'home.html';
+            }, 3000);
+    }else {
+        setTimeout(
+            function() 
+            {
+                window.location.href = 'home-reclutadores.html';
+            }, 3000);
+    }
+
+    
+    
+        
 });
 
 
@@ -13,7 +33,14 @@ $('#logout').click(function(){
 
     console.log("Cierre de sesión");
 
-    window.location.href = 'index.html';
+    $('#logout-modal').modal('show');
+
+    setTimeout(
+        function() 
+        {
+            window.location.href = 'index.html';
+        }, 3000);
+   
 });
 
 
@@ -24,6 +51,41 @@ $('#register').click(function(){
 
     window.location.href = 'registro.html';
 });
+
+$('#btn-ver-todo-ofertas-reclutadores').click(function(){
+    event.preventDefault();
+
+    console.log("Registro de usuario");
+
+    window.location.href = 'ofertas-reclutadores.html';
+});
+
+
+
+$('#register-employer').click(function(){
+    event.preventDefault();
+
+    console.log("Registro de usuario");
+
+    window.location.href = 'registro-empleador.html';
+});
+
+$('#create-account-btn').click(function(){
+    event.preventDefault();
+
+    console.log("Registro de usuario");
+
+});
+
+$('#volver-index-btn').click(function(){
+    event.preventDefault();
+
+    console.log("Registro de usuario");
+    window.location.href = 'index.html';
+});
+
+
+
 
 function password_show_hide() {
     var x = document.getElementById("password");

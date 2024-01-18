@@ -57,8 +57,19 @@
                       </span>
                     </div>
                   </div>
+                </div>
 
-                  
+                <div class="form-group">
+                  <label for="input-country">Tipo de acceso</label>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
+                    </div>
+                    <select class="form-control" id="input-access">
+                      <option value="U">Alumno/Profesional</option>
+                      <option value="E">Empleador</option>
+                    </select>
+                  </div>
                 </div>
 
 
@@ -68,7 +79,9 @@
                 <button id="login" type="submit" class="btn btn-primary btn-block" style="border-radius: 30px;">Iniciar Sesión</button>
                 <hr style="border-top: 1px solid black;"/>
                 <center><p>¿Aún no eres parte de esta comunidad?</p></center>
-                <button id="register" type="submit" class="btn btn-success btn-block" style="border-radius: 30px;">Registrarse</button>
+                <button id="register" type="submit" class="btn btn-success btn-block" style="border-radius: 30px;"><i class="fas fa-user justify-content-end"></i>&nbsp;&nbsp;Registrarse como Persona</button>
+
+                <button id="register-employer" type="submit" class="btn btn-success btn-block" style="border-radius: 30px;"><i class="fas fa-building justify-content-end"></i>&nbsp;Registrarse como Empleador</button>
 
               </form>
             </div>
@@ -80,6 +93,18 @@
 
       
       <div id="footer" class="container-fluid"></div> 
+
+      <div id="sucess-modal" class="modal fade" >
+        <div class="modal-dialog modal-confirm" style="float:right;">
+          <div class="modal-content" style="float:right; weight: 30%;">
+            <div class="modal-body text-center">
+              <h4>Bienvenido</h4>	
+              <p>Autenticación exitosa.</p>
+              <i class="fas fa-check-circle" style="font-size:48px;color:green"></i>
+            </div>
+          </div>
+        </div>
+      </div> 
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
