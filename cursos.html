@@ -14,36 +14,37 @@
     <img  class="img-bg"
           src="img/background-image-pages.avif">
   
-  <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Obten Empleo</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="home.html">Inicio <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Mis postulaciones</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="cursos.html">Cursos</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#" alt="Notificaciones"><i class="fa fa-bell" aria-hidden="true"></i> (2)</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Búsqueda" aria-label="Búsqueda">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-      </form>
-      <form class="form-inline my-2 my-lg-0" style="margin-left: 10px;">
-        <button  id="logout" class="btn btn-outline-danger my-2 my-sm-0" type="submit">Cerrar Sesión</button>
-      </form>
-    </div>
-  </nav>
+          <nav class="navbar navbar-expand-lg  navbar-dark bg-dark nav-border-bottom" >
+            <img src="img/image.png" class="estilo-logo"/>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link estilo-texto-nav" href="home.html">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link estilo-texto-nav" href="#">Mis postulaciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link estilo-texto-nav" href="cursos.html">Cursos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link estilo-texto-nav" href="#" alt="Notificaciones"><i class="fa fa-bell" aria-hidden="true"></i> (2)</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Búsqueda" aria-label="Búsqueda">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+              </form>
+              <form class="form-inline my-2 my-lg-0" style="margin-left: 10px;">
+                <button id="logout" class="btn btn-outline-danger my-2 my-sm-0" type="submit">Cerrar Sesión</button>
+              </form>
+            </div>
+          </nav>
+
       <div class="container-fluid" style="margin-top: 10px;">
         <div class="row">
             <div class="col-12">
@@ -125,15 +126,13 @@
           </div>
       </div>
       <br/>
-      <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 bg-dark"><br/></div>
-        </div>
-      </div>
+      <div id="footer" class="container-fluid"></div> 
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="js/validation.js"></script>
+    <script src="js/format.js"></script>
    </div>
 </body>
 </html>

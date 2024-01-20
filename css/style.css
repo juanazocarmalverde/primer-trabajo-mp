@@ -24,8 +24,8 @@
 }
 
 .circle-image-footer {
-    width:30%;
-    border-radius: 150px;
+    width:60%;
+    
 }
 
 .div-box-radius{
@@ -46,4 +46,25 @@
     background-image: url('../img/background-image-pages.avif');
     opacity: 0.9;
     background-size: contain;
+}
+
+.estilo-logo{
+    width: 9%;
+}
+
+.estilo-logo-index{
+    width: 10%;
+}
+
+.estilo-texto-nav {
+    color:white !important; 
+    font-weight: bold !important;
+}
+
+.nav-border-bottom{
+    border-bottom: 2px black solid;
+}
+
+.nav-border-top{
+    border-top: 2px black solid;
 }

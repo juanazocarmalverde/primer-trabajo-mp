@@ -11,8 +11,8 @@
 </head>
 <body style="background-color: #ABB2B9;">
   
-  <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Obten Empleo</a>
+  <nav class="navbar navbar-expand-lg  navbar-dark bg-dark nav-border-bottom" >
+    <img src="img/image.png" class="estilo-logo"/>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -20,16 +20,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="home.html">Inicio <span class="sr-only">(current)</span></a>
+          <a class="nav-link estilo-texto-nav" href="home.html">Inicio <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Mis postulaciones</a>
+            <a class="nav-link estilo-texto-nav" href="#">Mis postulaciones</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="cursos.html">Cursos</a>
+            <a class="nav-link estilo-texto-nav" href="cursos.html">Cursos</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#" alt="Notificaciones"><i class="fa fa-bell" aria-hidden="true"></i> (2)</a>
+            <a class="nav-link estilo-texto-nav" href="#" alt="Notificaciones"><i class="fa fa-bell" aria-hidden="true"></i> (2)</a>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
@@ -37,18 +37,18 @@
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
       </form>
       <form class="form-inline my-2 my-lg-0" style="margin-left: 10px;">
-        <button  id="logout" class="btn btn-outline-danger my-2 my-sm-0" type="submit">Cerrar Sesión</button>
+        <button id="logout" class="btn btn-outline-danger my-2 my-sm-0" type="submit">Cerrar Sesión</button>
       </form>
     </div>
   </nav>
+
       <div class="container-fluid" style="margin-top: 10px;">
         <div class="row">
             <div class="col-12">
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="home.html">Inicio</a></li>
-                  <li class="breadcrumb-item"><a href="#">Ofertas Laborales</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Oferta</li>
+                  <li class="breadcrumb-item"><a href="home-reclutadores.html">Inicio</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Mis Ofertas </li>
                 </ol>
               </nav>
             </div>
@@ -57,71 +57,72 @@
 
       <div class="container-fluid">
         <div class="row">
-            <div class="col-9">
+            <div class="col-12">
                 <div class="card" style="margin-top: 15px;">
                     <div class="card-body">
-                        
+                       <div lass="col-12  align-bottom">
+                        <div class="row">
+                        <div class="col-md-6 text-left">
+                            <H1>Listado de ofertas laborales</H1>  
+                        </div>
+                        <div class="col-md-6 bg-light align-bottom text-right " >                     
+                              <button type="button" class="btn btn-outline-success" style="border-radius: 10px; margin-left: 15px; bottom: 0;"><i class="fa fa-plus" aria-hidden="true"></i> Agregar</button>
+                         </div>
+                        </div>
+                        </div>
+                         <hr/>
                       <table class="table">
                         <thead class="thead-dark">
                           <tr>
                             <th scope="col">#</th>
                             <th scope="col">Nombre</th>
-                            <th scope="col">Estado Laboral</th>
-                            <th scope="col">Ofertas <br/>enviadas/aceptadas</th>
+                            <th scope="col">Cantidad de<br/>Postulantes</th>
+                            <th scope="col">Rango Salarial</th>
+                            <th scope="col">Fecha Publicacion</th>
+                            <th scope="col">Estado</th>
                             <th scope="col">Acción</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
-                            <th scope="row">1</th>
-                            <td>Juan Azócar Malverde</td>
-                            <td><kbd>Buscando</kbd></td>
-                            <td>10/3</td>
+                            <th scope="row">CFM001</th>
+                            <td>Desarrollo Full-Stack</td>
+                            <td><kbd>3</kbd></td>
+                            <td>$1.500.000 - $2.000.000 (CLP)</td>
+                            <td>10-01-2024</td>
+                            <td><kbd>Vigente</kbd></td>
                             <td>                        
-                              <button type="button" class="btn btn-primary" style="border-radius: 10px; margin-left: 15px; ">Modificar</button>
-                              <button type="button" class="btn btn-danger" style="border-radius: 10px; margin-left: 15px; ">Dar de Baja</button>
+                              <button type="button" class="btn btn-primary" style="border-radius: 10px; margin-left: 15px; "><i class="fa fa-edit" aria-hidden="true"></i></button>
+                              <button type="button" class="btn btn-danger" style="border-radius: 10px; margin-left: 15px; "><i class="fa fa-trash" aria-hidden="true"></i></button>
                           </td>
                           </tr>
                           <tr>
-                            <th scope="row">2</th>
-                            <td>María Rodríguez Castro</td>
-                            <td><kbd>Trabajando</kbd></td>
-                            <td>10/3</td>
+                            <th scope="row">CFM002</th>
+                            <td>Desarrollo Back-End</td>
+                            <td><kbd>0</kbd></td>
+                            <td>$1.500.000 - $2.000.000 (CLP)</td>
+                            <td>15-01-2024</td>
+                            <td><kbd>Vigente</kbd></td>
                             <td>
-                              <button type="button" class="btn btn-primary" style="border-radius: 10px; margin-left: 15px; ">Modificar</button>
-                              <button type="button" class="btn btn-danger" style="border-radius: 10px; margin-left: 15px; ">Dar de Baja</button>
+                              <button type="button" class="btn btn-primary" style="border-radius: 10px; margin-left: 15px; "><i class="fa fa-edit" aria-hidden="true"></i></button>
+                              <button type="button" class="btn btn-danger" style="border-radius: 10px; margin-left: 15px; "><i class="fa fa-trash" aria-hidden="true"></i></button>
                             </td>
                           </tr>
                           <tr>
-                            <th scope="row">3</th>
-                            <td>Isidora Azócar Rodríguez</td>
-                            <td><kbd>Trabajando</kbd></td>
-                            <td>10/3</td>
+                            <th scope="row">CFM003</th>
+                            <td>Desarrollo Front-End</td>
+                            <td><kbd>5</kbd></td>
+                            <td>$1.500.000 - $2.000.000 (CLP)</td>
+                            <td>05-01-2025</td>
+                            <td><kbd>Vigente</kbd></td>
                             <td>
-                              <button type="button" class="btn btn-primary" style="border-radius: 10px; margin-left: 15px; ">Modificar</button>
-                              <button type="button" class="btn btn-danger" style="border-radius: 10px; margin-left: 15px; ">Dar de Baja</button>
+                              <button type="button" class="btn btn-primary" style="border-radius: 10px; margin-left: 15px; "><i class="fa fa-edit" aria-hidden="true"></i></button>
+                              <button type="button" class="btn btn-danger" style="border-radius: 10px; margin-left: 15px; "><i class="fa fa-trash" aria-hidden="true"></i></button>
                             </td>
                           </tr>
                         </tbody>
                       </table>
 
-                    </div>
-                  </div>
-            </div>
-            
-            <div class="col-3">
-                <div class="card" style="margin-top: 15px;">
-                    <div class="card-body">
-                        <h6 class="card-title" style="margin-top: 10px;">Añadir a tus redes</h6>
-                        <hr/>
-                    </div>
-                  </div>
-
-                  <div class="card" style="margin-top: 15px;">
-                    <div class="card-body" style="text-align: left;">
-                        <kbd><a href="#" style="color:white; font-size: smaller;">Acerca de</a></kbd> <kbd><a href="#" style="color:white; font-size: smaller;">Accesibilidad</a></kbd>
-                        <kbd><a href="#" style="color:white; font-size: smaller;">Centro de ayuda</a></kbd> <kbd><a href="#" style="color:white; font-size: smaller;">Privacidad y condiciones</a></kbd>
-                        <kbd><a href="#" style="color:white; font-size: smaller;">Servicios</a></kbd> 
                     </div>
                   </div>
             </div>
