@@ -48,11 +48,12 @@ $('#login').click(function(){
     } else {
         var user = "john@doe.com";
         var password = "password";
-    
+
         $.ajax({
-            url: 'http://localhost:8000/api/login', // URL del endpoint
+            url: 'http://127.0.0.1:8000/api/login', // URL del endpoint
             type: 'POST', // Tipo de solicitud
             contentType: 'application/json',
+            crossDomain:true,
             headers: {},
             data: 
                 JSON.stringify({
@@ -67,8 +68,11 @@ $('#login').click(function(){
             },
             error: function(xhr, status, error) {
                 // Manejar errores
-                console.log(xhr.responseJSON.code);
-                console.log(xhr.responseJSON.message);
+                console.log(xhr);
+                console.log(status);
+                console.log(error);
+                //console.log(xhr.responseJSON.code);
+                //console.log(xhr.responseJSON.message);
             }
         }).then(function(data1) {
             // La primera llamada se ha completado, procesar data1 si es necesario
@@ -134,6 +138,8 @@ $('#login').click(function(){
                 },
                 error: function(xhr, status, error) {
                     // Manejar errores
+                    console.log(xhr);
+                    console.log(error);
                     var message = xhr.responseJSON.metadata.message;
                     console.log(message);
                     console.log(error);
