@@ -1,5 +1,5 @@
 
-$('#login').click(function(){
+/*$('#login').click(function(){
     event.preventDefault();
 
     console.log("Autenticado");
@@ -25,7 +25,7 @@ $('#login').click(function(){
     
     
         
-});
+});*/
 
 
 $('#logout').click(function(){
@@ -34,7 +34,8 @@ $('#logout').click(function(){
     console.log("Cierre de sesión");
 
     $('#logout-modal').modal('show');
-
+    localStorage.removeItem('user');
+    localStorage.removeItem('personal_token');
     setTimeout(
         function() 
         {
@@ -48,6 +49,7 @@ $('#register').click(function(){
     event.preventDefault();
 
     console.log("Registro de usuario");
+    
 
     window.location.href = 'registro.html';
 });

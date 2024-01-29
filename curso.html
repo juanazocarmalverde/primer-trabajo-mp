@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" crossorigin="anonymous" />
-  </head><body>
+  </head>
+<body>
   <div class="parent">
     <img  class="img-bg"
           src="img/background-image-pages.avif">
-  
+
           <nav class="navbar navbar-expand-lg  navbar-dark bg-dark nav-border-bottom" >
             <img src="img/image.png" class="estilo-logo"/>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,66 +50,52 @@
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="home.html">Inicio</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Cursos</li>
+                  <li class="breadcrumb-item"><a href="#">Ofertas Laborales</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Oferta</li>
                 </ol>
               </nav>
             </div>
         </div>
       </div>
+
       <div class="container-fluid">
         <div class="row">
-            <div class="col-3">
+            <div class="col-9">
                 <div class="card div-box-radius" style="margin-top: 15px;">
-                    <div class="card-body" style="text-align: center;">
-                        <a href="profile.html"><img src='img/default-user-icon.webp' class='circle-image' /></a>
-                        <h6 class="card-title" style="margin-top: 10px;"><a href="profile.html" style="color:black;">Juan Azócar Malverde</a></h6>
-                        <p class="card-text">Estudiante de ingeniería en informática</p>
+                    <div class="card-body">
+                        <img src='img/default-enterprise.png' class='circle-image-min' />
+                        <h1 class="card-title" style="margin-top: 10px;">Desarrollador Back-end</h1>
+                        <h4 class="card-title" style="margin-top: 10px;">Empresa de consultoría</h4>
                         <hr/>
                     </div>
                   </div>
-            </div>
-            <div class="col-6">
-              <div class="card div-box-radius" style="margin-top: 15px;">
-                <div class="card-body">
-                     <h3 class="card-title" style="text-decoration: underline;">Listado de cursos disponibles</h3>
-                </div>
-              </div>
-               
-                <div class="card div-box-radius" style="margin-top: 15px;">
-                    <div class="card-body">
-                        <h4 class="card-title">Desarrollador Full-Stack</h4>
-                        <p class="card-text">Empresa:&nbsp;<kbd>Primer Empleo</kbd></p>
-                        <p class="card-text">Básico</p>
-                        <p class="card-text">Valor: $5000 CLP</p>
-                        <p class="card-text"><kbd>Angular</kbd>&nbsp;<kbd>Springboot</kbd></p>
-                        <a href="curso.html" class="btn btn-primary">Ver Más...</a>
-                    </div>
-                  </div>
+
                   <div class="card div-box-radius" style="margin-top: 15px;">
                     <div class="card-body">
-                      <h4 class="card-title">Desarrollador Front-End</h4>
-                      <p class="card-text">Empresa:&nbsp;<kbd>Primer Empleo</kbd></p>
-                      <p class="card-text">Básico</p>
-                      <p class="card-text"><kbd>Angular</kbd></p>
-                      <p class="card-text">Valor: $5000 CLP</p>
-                      <a href="curso.html" class="btn btn-primary">Ver Más...</a>
+                        <h5 class="card-title" style="margin-top: 10px;">Descripción del curso</h5>
+                        <p class="card-text">Esta oferta bla bla bla bla</p>     
+                      
+                        <h6 class="card-title" style="margin-top: 10px;">Rubro</h6>   
+                        <p class="card-text"><kbd>Retail</kbd></p>            
+                    </div>
                   </div>
-                  </div>
-                  <div class="card div-box-radius" style="margin-top: 15px;" >
+                 
+                 
+                  <div class="card div-box-radius" style="margin-top: 15px;">
                     <div class="card-body">
-                      <h4 class="card-title">Desarrollador Back-end</h4>
-                      <p class="card-text">Empresa:&nbsp;<kbd>Primer Empleo</kbd></p>
-                      <p class="card-text">Básico</p>
-                      <p class="card-text"><kbd>Java</kbd>&nbsp;<kbd>SpringBoot</kbd></p>
-                      <p class="card-text">Valor: $5000 CLP</p>
-                      <a href="curso.html" class="btn btn-primary">Ver Más...</a>
+                      <form id="form-compra-curso" class="form-inline my-12 my-lg-12">
+                        <input type="hidden" id="token_ws" name="token_ws" value="" />
+                        <button id="comprar-curso" class="btn btn-outline-success my-2 my-sm-0 btn-lg btn-block" type="submit">COMPRAR</button>
+                      </form>             
+                    </div>
                   </div>
-                  </div>
+                 
             </div>
+            
             <div class="col-3">
                 <div class="card div-box-radius" style="margin-top: 15px;">
                     <div class="card-body">
-                        <h5 class="card-title" style="margin-top: 10px;">Mis cursos</h5>
+                        <h6 class="card-title" style="margin-top: 10px;">Añadir a tus redes</h6>
                         <hr/>
                     </div>
                   </div>
@@ -124,13 +111,14 @@
           </div>
       </div>
       <br/>
-      <div id="footer" class="container-fluid"></div> 
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+      <div id="footer" class="container-fluid"></div> 
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="js/validation.js"></script>
     <script src="js/format.js"></script>
-   </div>
+    <script src="js/integration.js"></script>
+    </div>
 </body>
 </html>
